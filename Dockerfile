@@ -3,6 +3,9 @@ FROM python:2.7.11
 # Install caravel
 RUN pip install caravel
 
+# Install psycopg2 driver
+RUN pip install psycopg2
+
 # copy admin password details to /caravel for fabmanager
 RUN mkdir /caravel
 COPY admin.config /caravel/
