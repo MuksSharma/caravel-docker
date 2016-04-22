@@ -1,3 +1,6 @@
-This is a Dockefile to build https://github.com/airbnb/caravel.
+This runs AirBnB's caravel app
 
-Currently it builds it per the quickstart demo instructions.
+username: admin
+password: caravel_admin
+
+docker run -p 8088:8088 -d kochalex/caravel
